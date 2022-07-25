@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.achievement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: darkgray;
+    border-radius: 20px;
+    min-height: 92px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.achievement label {
+    font-size: 30px;
+    margin-left: 20px;
+    width: 65%;
+}
+
+.achievement span {
+    font-size: 24px;
+    width: 18%;
+}
+
+.achievementsBlock {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-left: 228px;
+}
+
+.achievementsBlock .firstLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.achievementsBlock .firstLine button{
+    align-items: center;
+    padding: 20px 32px;
+    gap: 8px;
+
+    width: 314px;
+    height: 64px;
+    
+    background: #3B63AB;
+    border-radius: 8px;
+
+    text-transform: lowercase;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.achievementsBlock .firstLine .searchBar input{
+    align-items: center;
+    padding: 16px 20px;
+    margin-right: 228px;
+    gap: 10px;
+
+    width: 340px;
+    height: 56px;
+    background-color: #E6E6E6;
+    border-radius: 8px;
+    color: #212121;
+    border:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+}
+
+.achievementsBlock select {
+    width: 150px;
+    height: 30px;
+}
+
+.achievementsBlock .downloadButton {
+    align-self: end;
+    margin-top: 50px;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-right: 20px;
+    overflow-y: auto;
+    max-height: 400px;
+    margin-top: 40px;
+
+
+    text-transform: none;
+    color: #000000;
+}
+
+.achievement{
+    background: #E6E6E6;
+    border-radius: 20px;
+    width: 1464px;
+    height: 92px;
+}
+.achievements #noAchievementsSpan {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.SelectAchieves .List{
+    width: 1050px;
+    height: 56px;
+
+    content: 'Text';
+    color: #212121;
+    background: #E6E6E6;
+    border-radius: 4px;
+    border: none;
+}

@@ -1,0 +1,344 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.modal-content{
+    text-transform: none;
+    color: black;
+    font-family: "Nunito Sans Regular";
+}
+.grantsBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-top: 250px;
+    margin-left: 93px;
+
+}
+
+.grantsItemBlock {
+    display: flex;
+    flex-direction: column;
+    background: #3B63AB;
+    width: 525px;
+    height: 500px;
+    border-radius: 20px;
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.grantsItemBlock label{
+    text-transform: lowercase;
+    font-size: 56px;
+    line-height: 110%;
+    margin-top: 238px;
+    margin-left: 53px;
+
+    white-space: pre-line;
+}
+
+.grantsItemBlock span{
+    text-transform: lowercase;
+    font-size: 24px;
+    line-height: 120%;
+
+    margin-left: 53px;
+    margin-top: 28px;
+}
+
+.requestsBlock {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#myRequests {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 110%;
+    text-transform: none;
+    font-family: "Nunito Sans";
+
+    margin-top: 160px;
+}
+
+.request {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 92px;
+    margin-top: 40px;
+
+    background: #E6E6E6;
+    border-radius: 20px;
+
+    color: black;
+}
+
+.request label {
+    font-size: 30px;
+    margin-left: 44px;
+    width: 65%;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+}
+
+.request span {
+    font-size: 24px;
+    width: 18%;
+
+    text-transform: none;
+}
+
+.imagesBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.modalButtonsBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.modalButtonsBlock Button{
+    background: #3B63AB;
+}
+.modalButtonsBlock .DownloadDocs{
+    background: none;
+    border-color: #3B63AB;
+    color: #3B63AB;
+}
+.canselRequestButton {
+    width: 180px;
+    transition-duration: 0.2s;
+}
+
+.canselRequestButton::after {
+    content: "заявка отправлена";
+    background: #3B63AB;
+}
+
+.canselRequestButton:hover {
+    background: #BC2940;
+}
+
+.canselRequestButton:hover::after {
+    content: "отозвать заявку";
+}
+
+.modalConfirmationButtonsBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.modalConfirmationButtonsBlock .ConfirmationButton {
+    width: 80px;
+    background: #3B63AB;
+}
+
+.requestModalButtonsBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn-primary{
+    background: #3B63AB;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: #3B63AB;
+}
+
+
+
+
+/************** Modal 2 ***************/
+.modal-body{
+
+    padding-top: 79.5px;
+    padding-left: 75px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(142, 141, 208, 0.12);
+    border-radius: 20px;
+
+    font-family: "Nunito Sans Regular";
+}
+
+.modal-body h1{
+    margin-bottom: 32px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 110%;
+    font-family: "Nunito Sans";
+}
+
+.modal-body h4{
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.modal-body h5{
+    margin-bottom: 32px;
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.modal-body label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 8px;
+    color: #3B63AB;
+}
+
+/************ BUTTONS ADD DOCUMENTS **********/
+
+.AddDocs {
+    color: transparent;
+}
+.AddDocs::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.AddDocs::before {
+    content: 'загрузить';
+    color: black;
+    display: inline-block;
+
+    width: 200px;
+    height: 50px;
+    border: 1px solid #3B63AB;
+    border-radius: 8px;
+    padding: 10px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Nunito Sans Regular";
+    color: #3B63AB;
+
+    text-align: center;
+}
+.AddDocs:hover::before {
+    border-color: black;
+}
+.AddDocs:active {
+    outline: 0;
+}
+.AddDocs:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+
+/*********** SELECTORS ********/
+.SelectCategory, .SelectAchieves {
+    width: 1050px;
+    height: 56px;
+
+    content: 'Text';
+    color: #212121;
+    background: #E6E6E6;
+    border-radius: 4px;
+    border: none;
+
+}
+
+
+.checkboxBlock{
+    width: 200px;
+    height: 50px;
+    border: 1px solid #3B63AB;
+    border-radius: 8px;
+    padding: 10px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Nunito Sans Regular";
+    color: #3B63AB;
+
+    text-align: center;
+}
+
+/************ Checkbox Styles ********/
+.CheckboxAgree {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.CheckboxAgree+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.CheckboxAgree+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #3B63AB;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.CheckboxAgree:checked+label::before {
+    border-color: #3B63AB;
+    background-color: #3B63AB;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили при наведении курсора на checkbox */
+.CheckboxAgree:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #3B63AB;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.CheckboxAgree:not(:disabled):active+label::before {
+    background-color: #3B63AB;
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.CheckboxAgree:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.CheckboxAgree:disabled+label::before {
+    background-color: #e9ecef;
+}
